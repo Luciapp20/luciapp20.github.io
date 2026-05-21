@@ -34,9 +34,9 @@ The system computation graph below showcases the nodes, topics, and multi-robot 
 Inside this repository, you can find the complete engineering breakdown of the setup, namespacing logic, and ROS2 node coordination:
 
 [![View Technical Report](https://img.shields.io/badge/Documentation-View%20Full%20PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](assets/documents/DOCUMENTO_TECNICO_ROM.pdf)
-[![Watch Mobile Robot Video](https://img.shields.io/badge/YouTube-Watch%20Robot%20Video-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/iAL3DPVJlok)
 
-#### **Project Media**
+---
+
 [![Watch the video](https://img.shields.io/badge/YouTube-Watch%20Video-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/iAL3DPVJlok)
 
 ### 3. "Through the Door" - AR Measurement App
