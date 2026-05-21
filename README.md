@@ -29,7 +29,7 @@ The system computation graph below showcases the nodes, topics, and multi-robot 
 ![System Architecture](assets/images/Rqt_graph.png)
 
 #### **Project Media**
-*(Here you can place the video link `VID-20250512-WA0013.mp4` showing the mobile robot executing the path and avoiding obstacles)*
+<video src="assets/videos/v2.mp4" width="100%" autoplay loop muted playsinline></video>
 
 ### 3. "Through the Door" - AR Measurement App
 * **Technologies:** Flutter, Dart, Android Studio, GitLab.
