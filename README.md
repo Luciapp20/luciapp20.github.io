@@ -24,9 +24,17 @@ Developed and simulated a cooperative relay race between two autonomous mobile r
 * **Dynamic Waypoint Configuration:** Created a dedicated waypoint publisher node (`waypoints_node`) that dynamically parses spatial path coordinates from a `path.yaml` file and streams them to the architecture.
 
 #### **System Architecture Graph (rqt_graph)**
-The system computation graph below showcases the nodes, topics, and multi-robot communication pipeline designed for this synchronization task:
+The system computation graph below showcases the nodes, topics, and multi-robot communication pipeline designed for this synchronization task. Click on the image or the button below to view the full configuration:
 
-![System Architecture](assets/images/Rqt_graph.png)
+[![System Architecture](assets/images/Rqt_graph.png)](assets/images/Rqt_graph.png)
+
+---
+
+#### **Project Documentation & Media**
+Inside this repository, you can find the complete engineering breakdown of the setup, namespacing logic, and ROS2 node coordination:
+
+[![View Technical Report](https://img.shields.io/badge/Documentation-View%20Full%20PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](assets/documents/documento_tecnico.pdf)
+[![Watch Mobile Robot Video](https://img.shields.io/badge/YouTube-Watch%20Robot%20Video-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/iAL3DPVJlok)
 
 #### **Project Media**
 [![Watch the video](https://img.shields.io/badge/YouTube-Watch%20Video-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/iAL3DPVJlok)
