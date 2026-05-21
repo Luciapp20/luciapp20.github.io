@@ -36,7 +36,7 @@ Inside this repository, you can find the complete engineering breakdown of the s
 [![View Technical Report](https://img.shields.io/badge/Documentation-View%20Full%20PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](assets/documents/DOCUMENTO_TECNICO_ROM.pdf)
 
 ---
-[![Robots](assets/images/robots2.png)](assets/images/robots2.png)
+[![Robots](assets/images/rotobs2.png)](assets/images/rotobs2.png)
 
 [![Watch the video](https://img.shields.io/badge/YouTube-Watch%20Video-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/iAL3DPVJlok)
 
