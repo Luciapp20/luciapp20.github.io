@@ -27,7 +27,9 @@ Developed and simulated a cooperative relay race between two autonomous mobile r
 The system computation graph below showcases the nodes, topics, and multi-robot communication pipeline designed for this synchronization task. Click on the image or the button below to view the full configuration:
 
 [![System Architecture](assets/images/Rqt_graph.png)](assets/images/Rqt_graph.png)
-
+<a href="assets/images/Rqt_graph.png" target="_blank">
+  <img src="assets/images/Rqt_graph.png" width="450" alt="Robots">
+</a>
 ---
 
 #### **Project Documentation & Media**
@@ -36,7 +38,9 @@ Inside this repository, you can find the complete engineering breakdown of the s
 [![View Technical Report](https://img.shields.io/badge/Documentation-View%20Full%20PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](assets/documents/DOCUMENTO_TECNICO_ROM.pdf)
 
 ---
-[![Robots](assets/images/robots2.png)](assets/images/robots2.png)
+<a href="assets/images/robots2.png" target="_blank">
+  <img src="assets/images/robots2.png" width="450" alt="Robots">
+</a>
 
 [![Watch the video](https://img.shields.io/badge/YouTube-Watch%20Video-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/iAL3DPVJlok)
 
