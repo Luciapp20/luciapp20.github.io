@@ -29,10 +29,7 @@ The system computation graph below showcases the nodes, topics, and multi-robot 
 ![System Architecture](assets/images/Rqt_graph.png)
 
 #### **Project Media**
-<iframe width="100%" height="500" 
-  src="https://www.youtube.com/embed/iAL3DPVJlok?autoplay=1&loop=1&mute=1&playlist=iAL3DPVJlok" 
-  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/iAL3DPVJlok?autoplay=1&loop=1&mute=1&playlist=iAL3DPVJlok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### 3. "Through the Door" - AR Measurement App
 * **Technologies:** Flutter, Dart, Android Studio, GitLab.
