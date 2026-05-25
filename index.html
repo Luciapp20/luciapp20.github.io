@@ -196,7 +196,7 @@
         <!-- IMAGE -->
         <div class="project-img">
 
-            <img src="./assets/img1.jpeg"
+            <img src="./assets/images/img1.jpeg"
                 alt="Custom 3D Printed Robotic Components"
                 class="img-fluid">
 
@@ -364,36 +364,231 @@
                 </div>
             </div>
 
-            <!-- PROJECT 3 -->
+                       <!-- PROJECT 3 -->
             <div class="project-card">
-
+            
                 <div class="project-content">
-
+            
                     <h4>
-                        3. "Through the Door" - AR Measurement App
+                        3. Through The Door | Cross-Platform AR Assistive Technology
                     </h4>
-
+            
                     <p class="tech-tags">
                         <span>Flutter</span>
                         <span>Dart</span>
-                        <span>Android Studio</span>
-                        <span>GitLab</span>
+                        <span>Firebase</span>
+                        <span>Cloud Firestore</span>
+                        <span>AR</span>
+                        <span>OpenStreetMap</span>
+                        <span>BloC / Cubit</span>
+                        <span>Clean Architecture</span>
+                        <span>Figma</span>
                     </p>
-
+            
+                    <h5>Project Overview</h5>
+            
                     <p>
-                        Mobile application developed during my semester at HvA
-                        (Amsterdam) inside the Social Impact Apps studio,
-                        focusing on clean UI design and agile workflows.
+                        <strong>Through The Door</strong> is a cross-platform mobile
+                        application designed to empower individuals with reduced mobility,
+                        specifically wheelchair users, by providing real-time accessibility
+                        telemetry of urban and university infrastructures.
                     </p>
-
-                    <!-- IMAGE -->
+            
+                    <p>
+                        Developed during the
+                        <strong>Social Impact Apps</strong> studio at the
+                        Amsterdam University of Applied Sciences (HvA),
+                        the application addresses the lack of reliable architectural
+                        accessibility information by combining
+                        Augmented Reality,
+                        Geospatial Mapping,
+                        and Reactive Cloud Services.
+                    </p>
+            
+                    <p>
+                        Users can measure physical spaces such as doors and narrow passages
+                        directly through their smartphones and visualize accessibility
+                        reports on a live interactive map.
+                    </p>
+            
+                    <h5>Architecture & Technical Stack</h5>
+            
+                    <ul>
+            
+                        <li>
+                            <strong>Frontend:</strong>
+                            Cross-platform mobile development using
+                            <code>Flutter</code> and
+                            <code>Dart</code>.
+                        </li>
+            
+                        <li>
+                            <strong>Architecture:</strong>
+                            Implemented following
+                            <code>Clean Architecture</code>
+                            and
+                            <code>SOLID</code>
+                            principles with clear separation between
+                            Data, Domain, and Presentation layers.
+                        </li>
+            
+                        <li>
+                            <strong>State Management:</strong>
+                            Reactive UI handling using
+                            <code>BloC / Cubit</code>.
+                        </li>
+            
+                        <li>
+                            <strong>Augmented Reality:</strong>
+                            Spatial measurement system developed with
+                            <code>ar_flutter_plugin_2</code>
+                            for horizontal and vertical plane detection.
+                        </li>
+            
+                        <li>
+                            <strong>Geospatial Infrastructure:</strong>
+                            Interactive mapping powered by
+                            <code>flutter_map</code>
+                            and
+                            <code>OpenStreetMap</code>.
+                        </li>
+            
+                        <li>
+                            <strong>Backend:</strong>
+                            Real-time cloud synchronization using
+                            <code>Cloud Firestore</code>,
+                            <code>Firebase Authentication</code>,
+                            and local persistence with
+                            <code>SharedPreferences</code>.
+                        </li>
+            
+                        <li>
+                            <strong>Dependency Injection:</strong>
+                            Modular decoupling through the
+                            <code>GetIt</code>
+                            service locator pattern.
+                        </li>
+            
+                    </ul>
+            
+                    <h5>Key Technical Contributions</h5>
+            
+                    <ul>
+            
+                        <li>
+                            <strong>AR Spatial Telemetry:</strong>
+                            Developed the augmented reality measurement engine capable of
+                            detecting planes and computing real-world distances using
+                            3D vector mathematics.
+                        </li>
+            
+                        <li>
+                            <strong>Accessibility Validation Logic:</strong>
+                            Implemented a dynamic validation pipeline comparing measured
+                            door widths against user wheelchair configurations to classify
+                            spaces as accessible or non-accessible in real time.
+                        </li>
+            
+                        <li>
+                            <strong>Live GPS & Map Synchronization:</strong>
+                            Engineered asynchronous geolocation pipelines connected to
+                            real-time Firestore streams for dynamic map marker updates.
+                        </li>
+            
+                        <li>
+                            <strong>Interactive Geospatial UI:</strong>
+                            Designed contextual map overlays and modal bottom sheets
+                            displaying telemetry metadata and accessibility measurements.
+                        </li>
+            
+                        <li>
+                            <strong>Automated Testing & Reliability:</strong>
+                            Developed widget tests and hardware virtualization mocks
+                            using
+                            <code>mocktail</code>
+                            and
+                            <code>MethodChannel</code>
+                            simulation to validate GPS and device-dependent workflows.
+                        </li>
+            
+                    </ul>
+            
+                    <h5>Social Impact & Engineering Goals</h5>
+            
+                    <p>
+                        The application was designed to reduce uncertainty and mobility
+                        barriers for wheelchair users by delivering precise and verifiable
+                        accessibility measurements before physically reaching a location.
+                    </p>
+            
+                    <p>
+                        The project combined software engineering,
+                        geospatial systems,
+                        augmented reality,
+                        mobile UX design,
+                        and accessibility-centered development into a production-oriented
+                        architecture.
+                    </p>
+            
+                    <!-- APP IMAGE -->
                     <div class="project-img">
-                        <img src="./assets/app_screen.png"
-                            alt="AR App"
+            
+                        <img src="./assets/through_the_door_app.png"
+                            alt="Through The Door Mobile App"
                             class="img-fluid">
+            
                     </div>
-
+            
+                    <!-- OPTIONAL FIGMA IMAGE -->
+                    <!--
+                    <div class="project-img">
+            
+                        <img src="./assets/figma_designs.png"
+                            alt="Figma UI Designs"
+                            class="img-fluid">
+            
+                    </div>
+                    -->
+            
+                    <!-- PROJECT LINKS -->
+                    <div class="project-links">
+            
+                        <a href="https://github.com/Luciapp20"
+                            target="_blank"
+                            class="btn-small">
+            
+                            <i class="fa-brands fa-github"></i>
+                            Repository
+                        </a>
+            
+                        <a href="https://www.figma.com/"
+                            target="_blank"
+                            class="btn-small">
+            
+                            <i class="fa-brands fa-figma"></i>
+                            Figma Designs
+                        </a>
+            
+                        <a href="./assets/through_the_door_demo.mp4"
+                            target="_blank"
+                            class="btn-small">
+            
+                            <i class="fa-solid fa-video"></i>
+                            Demo Video
+                        </a>
+            
+                        <a href="./assets/through_the_door_report.pdf"
+                            target="_blank"
+                            class="btn-small">
+            
+                            <i class="fa-solid fa-file-pdf"></i>
+                            Technical Report
+                        </a>
+            
+                    </div>
+            
                 </div>
+            
             </div>
 
         </section>
