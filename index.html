@@ -1,106 +1,330 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucía Pardo Pérez | Robotics & Software Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Iconos para las redes sociales -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
 
-    <!-- CABECERA / HERO SECTION -->
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
     <header>
         <div class="container hero-container">
+
             <h1>Lucía Pardo Pérez</h1>
-            <h2>Informatics & Robotics Engineer</h2>
-            <p class="location"><i class="fa-solid fa-location-dot"></i> Amsterdam, Netherlands</p>
-            <p class="bio">Hi! I specialize in bridging the gap between smart software (Python, ROS2, Flutter) and physical hardware. Passionate about automation, robotic simulation, and creating impactful applications.</p>
+
+            <h2>Robotics & Software Engineer</h2>
+
+            <p class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                Amsterdam, Netherlands
+            </p>
+
+            <p class="bio">
+                Robotics & Software Engineer focused on autonomous systems,
+                ROS2 architectures, robotic simulation, industrial automation,
+                and mobile development. Passionate about building intelligent
+                systems that connect software with real-world robotics.
+            </p>
+
             <div class="contact-links">
-                <!-- ⚠️ REEMPLAZA EL ENLACE DE LINKEDIN CON EL TUYO REAL -->
-                <a href="https://linkedin.com/in/tu-usuario" target="_blank" class="btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="mailto:pardoperezlucia@gmail.com" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Email</a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/TU-LINKEDIN"
+                    target="_blank"
+                    class="btn">
+
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/Luciapp20"
+                    target="_blank"
+                    class="btn btn-secondary">
+
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:pardoperezlucia@gmail.com"
+                    class="btn btn-secondary">
+
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </a>
+
+                <!-- CV -->
+                <a href="./assets/LuciaPardoCV.pdf"
+                    target="_blank"
+                    class="btn">
+
+                    <i class="fa-solid fa-file"></i>
+                    CV
+                </a>
+
             </div>
         </div>
     </header>
 
-    <!-- SECCIÓN DE PROYECTOS -->
+    <!-- MAIN -->
     <main class="container">
+
+        <!-- PROJECTS -->
         <section id="projects">
+
             <h3 class="section-title">🦾 Key Projects</h3>
-            
-            <!-- Proyecto 1: UR10e -->
+
+            <!-- PROJECT 1 -->
             <div class="project-card">
+
                 <div class="project-content">
-                    <h4>1. UR10e Robotic Arm: Pick & Place Industrial Cell</h4>
-                    <p class="tech-tags"><span>Onshape (3D CAD)</span> <span>Universal Robots</span> <span>Trajectory Optimization</span> <span>Gripper Design</span></p>
-                    <p>Designed and programmed an automated industrial cell. I used Onshape to model and 3D-print custom mechanical grippers and fixtures to sort and place components in different layouts.</p>
+
+                    <h4>
+                        1. UR10e Robotic Arm: Pick & Place Industrial Cell
+                    </h4>
+
+                    <p class="tech-tags">
+                        <span>Onshape (3D CAD)</span>
+                        <span>Universal Robots</span>
+                        <span>Trajectory Optimization</span>
+                        <span>Gripper Design</span>
+                    </p>
+
+                    <p>
+                        Designed and programmed an automated industrial cell.
+                        I used Onshape to model and 3D-print custom mechanical
+                        grippers and fixtures to sort and place components in
+                        different layouts.
+                    </p>
+
+                    <!-- IMAGE -->
+                    <div class="project-img">
+                        <img src="./assets/ur10e.png"
+                            alt="UR10e Project"
+                            class="img-fluid">
+                    </div>
+
                 </div>
-                <!-- Si tienes foto del brazo robótico en assets, descomenta la línea de abajo borrando las flechas -->
-                <!-- <div class="project-img"><img src="./assets/ur10e.png" alt="UR10e Project"></div> -->
             </div>
 
-            <!-- Proyecto 2: ROS2 -->
+            <!-- PROJECT 2 -->
             <div class="project-card">
+
                 <div class="project-content">
-                    <h4>2. Multi-Robot Relay Race Simulation (ROS2 & CoppeliaSim)</h4>
-                    <p class="tech-tags"><span>Python</span> <span>ROS2 (Humble)</span> <span>CoppeliaSim</span> <span>Pure Pursuit Algorithm</span> <span>TF2</span> <span>YAML</span></p>
-                    
+
+                    <h4>
+                        2. Multi-Robot Relay Race Simulation
+                        (ROS2 & CoppeliaSim)
+                    </h4>
+
+                    <p class="tech-tags">
+                        <span>Python</span>
+                        <span>ROS2 (Humble)</span>
+                        <span>CoppeliaSim</span>
+                        <span>Pure Pursuit</span>
+                        <span>TF2</span>
+                        <span>YAML</span>
+                    </p>
+
                     <h5>Project Overview</h5>
-                    <p>Developed and simulated a cooperative relay race between two autonomous mobile robots using the Turtlebot3 (Burger) model in a virtual environment. The core challenge was to implement an automated coordination logic where the first robot follows a predefined path, stops at the final waypoint, and triggers the second robot to execute the same path.</p>
-                    
+
+                    <p>
+                        Developed and simulated a cooperative relay race between
+                        two autonomous mobile robots using the Turtlebot3 model.
+                        The system implements a coordination architecture where
+                        one robot finishes a trajectory and triggers the second
+                        robot to continue autonomously.
+                    </p>
+
                     <h5>Key Technical Contributions</h5>
+
                     <ul>
-                        <li><strong>Path Tracking Control:</strong> Implemented trajectory control based on the <code>cmd_vel</code> and <code>odom</code> topics using a Pure Pursuit controller in Python.</li>
-                        <li><strong>Multi-Robot Architecture & Namespacing:</strong> Duplicated and configured robot models in CoppeliaSim. Avoided topic collision by designing an isolated multi-robot ROS2 launch framework using distinct namespaces (<code>/robot1</code> and <code>/robot2</code>).</li>
-                        <li><strong>Topic Remapping & Coordination:</strong> Designed custom remappings for odometry and velocity commands (<code>/odom1</code>, <code>/cmd_vel1</code>, etc.) and integrated a Relay Manager Node (<code>relay_manager</code>) to synchronize state transitions through dedicated coordination topics.</li>
-                        <li><strong>Dynamic Waypoint Configuration:</strong> Created a dedicated waypoint publisher node (<code>waypoints_node</code>) that dynamically parses spatial path coordinates from a <code>path.yaml</code> file and streams them to the architecture.</li>
+                        <li>
+                            <strong>Path Tracking Control:</strong>
+                            Implemented Pure Pursuit trajectory control using
+                            <code>cmd_vel</code> and
+                            <code>odom</code>.
+                        </li>
+
+                        <li>
+                            <strong>Multi-Robot Architecture:</strong>
+                            Designed isolated ROS2 namespaces
+                            (<code>/robot1</code> and
+                            <code>/robot2</code>)
+                            to avoid topic collisions.
+                        </li>
+
+                        <li>
+                            <strong>Coordination Logic:</strong>
+                            Integrated a custom
+                            <code>relay_manager</code>
+                            node for synchronization between robots.
+                        </li>
+
+                        <li>
+                            <strong>Waypoint System:</strong>
+                            Created a dynamic waypoint publisher using
+                            YAML configurations.
+                        </li>
                     </ul>
 
-                    <h5>System Architecture Graph (rqt_graph)</h5>
-                    <p>The system computation graph below showcases the nodes, topics, and multi-robot communication pipeline designed for this synchronization task:</p>
-                    
-                    <!-- Imagen del rqt_graph apuntando a tu asset corregido -->
+                    <h5>System Architecture Graph</h5>
+
+                    <p>
+                        The graph below shows the ROS2 nodes, topics,
+                        remappings, and communication pipeline used for
+                        multi-robot synchronization.
+                    </p>
+
+                    <!-- IMAGE -->
                     <div class="rqt-graph-container">
-                        <img src="./assets/robots2.png" alt="rqt_graph Multi-Robot Architecture" class="img-fluid">
+
+                        <img src="./assets/robots2.png"
+                            alt="ROS2 Architecture"
+                            class="img-fluid">
+
+                    </div>
+
+                    <!-- PROJECT LINKS -->
+                    <div class="project-links">
+
+                        <a href="https://github.com/Luciapp20"
+                            target="_blank"
+                            class="btn-small">
+
+                            <i class="fa-brands fa-github"></i>
+                            Repository
+                        </a>
+
+                        <a href="./assets/technical_report.pdf"
+                            target="_blank"
+                            class="btn-small">
+
+                            <i class="fa-solid fa-file-pdf"></i>
+                            Technical Report
+                        </a>
+
+                        <a href="https://youtube.com/"
+                            target="_blank"
+                            class="btn-small">
+
+                            <i class="fa-solid fa-video"></i>
+                            Demo Video
+                        </a>
+
                     </div>
                 </div>
             </div>
 
-            <!-- Proyecto 3: App HvA -->
+            <!-- PROJECT 3 -->
             <div class="project-card">
+
                 <div class="project-content">
-                    <h4>3. "Through the Door" - AR Measurement App</h4>
-                    <p class="tech-tags"><span>Flutter</span> <span>Dart</span> <span>Android Studio</span> <span>GitLab</span></p>
-                    <p>Mobile application developed during my semester at HvA (Amsterdam) inside the Social Impact Apps studio, focusing on clean user interfaces and agile workflow integration.</p>
+
+                    <h4>
+                        3. "Through the Door" - AR Measurement App
+                    </h4>
+
+                    <p class="tech-tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Android Studio</span>
+                        <span>GitLab</span>
+                    </p>
+
+                    <p>
+                        Mobile application developed during my semester at HvA
+                        (Amsterdam) inside the Social Impact Apps studio,
+                        focusing on clean UI design and agile workflows.
+                    </p>
+
+                    <!-- IMAGE -->
+                    <div class="project-img">
+                        <img src="./assets/app_screen.png"
+                            alt="AR App"
+                            class="img-fluid">
+                    </div>
+
                 </div>
-                <!-- <div class="project-img"><img src="./assets/app_screen.png" alt="AR App Screen"></div> -->
             </div>
+
         </section>
 
-        <!-- SECCIÓN DE HABILIDADES -->
+        <!-- SKILLS -->
         <section id="skills">
+
             <h3 class="section-title">🛠️ Skills & Tech Stack</h3>
+
             <div class="skills-grid">
+
+                <!-- LANGUAGES -->
                 <div class="skill-category">
+
                     <h5>Languages</h5>
-                    <p>Python, C++, SQL, Dart, Kotlin</p>
+
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>C++</span>
+                        <span>SQL</span>
+                        <span>Dart</span>
+                        <span>Kotlin</span>
+                    </div>
+
                 </div>
+
+                <!-- TOOLS -->
                 <div class="skill-category">
+
                     <h5>Frameworks & Tools</h5>
-                    <p>ROS2, Flutter, Android Studio, Onshape, Git / GitLab</p>
+
+                    <div class="skill-tags">
+                        <span>ROS2</span>
+                        <span>Flutter</span>
+                        <span>Android Studio</span>
+                        <span>Onshape</span>
+                        <span>Git</span>
+                        <span>GitLab</span>
+                        <span>CoppeliaSim</span>
+                    </div>
+
                 </div>
+
             </div>
+
         </section>
+
     </main>
 
-    <!-- PIE DE PÁGINA -->
-    <footer>
+    <!-- FOOTER -->
+    <footer id="contact">
+
         <div class="container">
-            <p>&copy; 2026 Lucía Pardo Pérez. Built with HTML & CSS.</p>
+
+            <p>
+                © 2026 Lucía Pardo Pérez · Built with HTML & CSS
+            </p>
+
         </div>
+
     </footer>
 
 </body>
