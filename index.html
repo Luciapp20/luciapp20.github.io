@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucía Pardo Pérez | Robotics & Software Portfolio</title>
 
     <link rel="stylesheet" href="style.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
 
     <nav class="navbar">
@@ -20,7 +21,7 @@
     </nav>
 
     <header>
-        <div class="container hero-container hero-flex">
+        <div class="container hero-container hero-flex animate-fade-in">
             <div class="hero-image">
                 <img src="./assets/images/foto.jpg" alt="Lucía Pardo Pérez" class="profile-img">
             </div>
@@ -46,15 +47,12 @@
                     <a href="https://www.linkedin.com/in/lucia-pardo-p%C3%A9rez-b443a524b/" target="_blank" class="btn">
                         <i class="fa-brands fa-linkedin"></i> LinkedIn
                     </a>
-
                     <a href="https://github.com/Luciapp20" target="_blank" class="btn btn-secondary">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a>
-
                     <a href="mailto:pardoperezlucia@gmail.com" class="btn btn-secondary">
                         <i class="fa-solid fa-envelope"></i> Email
                     </a>
-
                     <a href="./assets/documents/CV_english.pdf" target="_blank" class="btn">
                         <i class="fa-solid fa-file"></i> CV
                     </a>
@@ -67,217 +65,290 @@
 
         <section id="projects">
             <h3 class="section-title">🦾 Key Projects</h3>
-            
-            <div class="project-card">
-                <div class="project-content">
-                    <h4>1. Industrial Pick & Place Automation with Custom 3D-Printed Tooling</h4>
-                    <p class="tech-tags">
-                        <span>Universal Robots UR10e</span>
-                        <span>Onshape CAD</span>
-                        <span>3D Printing</span>
-                        <span>Industrial Automation</span>
-                        <span>Robot Programming</span>
-                        <span>End-Effector Design</span>
-                        <span>Rapid Prototyping</span>
-                    </p>
 
-                    <h5>Project Overview</h5>
-                    <p>
-                        Designed and programmed an industrial robotic manipulation cell
-                        using the Universal Robots UR10e platform. The project focused on
-                        automated pick & place and assembly operations using custom-designed
-                        robotic grippers and 3D-printed tooling components.
-                    </p>
-                    <p>
-                        The engineering challenge consisted of creating optimized robotic
-                        fingers and support structures capable of manipulating different
-                        industrial objects such as spoons and packaging elements while
-                        maintaining precision, repeatability, and grasp stability.
-                    </p>
-
-                    <h5>Key Technical Contributions</h5>
-                    <ul>
-                        <li><strong>Custom CAD Design:</strong> Designed modular robotic gripper fingers and support fixtures in <code>Onshape</code> for the <code>SMC MHC2-16D</code> pneumatic gripper system.</li>
-                        <li><strong>3D Manufacturing Workflow:</strong> Fabricated and validated custom-designed parts using additive manufacturing techniques, including tolerance validation, mechanical fitting, and modular assembly integration.</li>
-                        <li><strong>Robot Programming:</strong> Programmed industrial manipulation routines for pick & place, multi-pick, and assembly tasks using Universal Robots software environments.</li>
-                        <li><strong>Assembly Automation:</strong> Developed automated spoon insertion and positioning routines where the robot aligned and inserted components into different target locations with varying difficulty levels.</li>
-                        <li><strong>Process Optimization:</strong> Optimized robot trajectories and execution timing to maximize the number of successful manipulation cycles during constrained operation windows.</li>
-                    </ul>
-
-                    <h5>Engineering Workflow</h5>
-                    <p>
-                        The project combined robotic manipulation, custom mechanical design, industrial automation, and additive manufacturing workflows. All components were designed in CAD, fabricated through 3D printing, assembled mechanically, and validated on industrial robotic platforms.
-                    </p>
-
-                    <h5>Mechanical Design & Prototyping</h5>
-                    <p>
-                        Designed and fabricated custom robotic fixtures, gripper adapters, and manipulation supports using additive manufacturing techniques. The components were optimized for fast prototyping, modular assembly, and compatibility with industrial robotic tooling.
-                    </p>
-
-                    <div class="project-img">
-                        <img src="./assets/images/img1.jpeg" alt="Custom 3D Printed Robotic Components" class="img-fluid">
-                    </div>
-
-                    <div class="project-links">
-                        <a href="https://cad.onshape.com/documents/1eccf1dde654c16a14009203/w/492d1a0b2fd5d08933c38560/e/1936e551d0857c22591528de?renderMode=0&uiState=6a1497977106603d88c36e59" target="_blank" class="btn-small">
-                            <i class="fa-solid fa-cube"></i> Onshape CAD
-                        </a>
-                        <a href="https://youtube.com/shorts/2tpM4zZSS9I" target="_blank" class="btn-small">
-                            <i class="fa-solid fa-video"></i> Custom 3D-Printed Robotic Gripper
-                        </a>
-                        <a href="https://youtube.com/shorts/aeVWRfvBhe0" target="_blank" class="btn-small">
-                            <i class="fa-solid fa-video"></i> Demo Video 1
-                        </a>
-                        <a href="https://youtube.com/shorts/8AliYR19RZQ" target="_blank" class="btn-small">
-                            <i class="fa-solid fa-video"></i> Demo Video 2
-                        </a>
-                    </div>
-                </div>
+            <div class="project-submenu">
+                <button class="submenu-btn active" data-filter="all">All Projects</button>
+                <button class="submenu-btn" data-filter="robotics">Robotics & Automation</button>
+                <button class="submenu-btn" data-filter="vision">Vision & Graphics</button>
+                <button class="submenu-btn" data-filter="mobile">Mobile Apps</button>
             </div>
 
-            <div class="project-card">
-                <div class="project-content">
-                    <h4>2. Multi-Robot Relay Race Simulation (ROS2 & CoppeliaSim)</h4>
-                    <p class="tech-tags">
-                        <span>Python</span>
-                        <span>ROS2 (Humble)</span>
-                        <span>CoppeliaSim</span>
-                        <span>Pure Pursuit</span>
-                        <span>TF2</span>
-                        <span>YAML</span>
-                    </p>
+            <div class="projects-grid">
+                <div class="project-card animate-card" data-category="robotics">
+                    <div class="project-content">
+                        <h4>1. Industrial Pick & Place Automation with Custom 3D-Printed Tooling</h4>
+                        <p class="tech-tags">
+                            <span>Universal Robots UR10e</span>
+                            <span>Onshape CAD</span>
+                            <span>3D Printing</span>
+                            <span>Industrial Automation</span>
+                            <span>Robot Programming</span>
+                            <span>End-Effector Design</span>
+                            <span>Rapid Prototyping</span>
+                        </p>
 
-                    <h5>Project Overview</h5>
-                    <p>
-                        Developed and simulated a cooperative relay race between two autonomous mobile robots using the Turtlebot3 model. The system implements a coordination architecture where one robot finishes a trajectory and triggers the second robot to continue autonomously.
-                    </p>
+                        <h5>Project Overview</h5>
+                        <p>
+                            Designed and programmed an industrial robotic manipulation cell
+                            using the Universal Robots UR10e platform. The project focused on
+                            automated pick & place and assembly operations using custom-designed
+                            robotic grippers and 3D-printed tooling components.
+                        </p>
+                        <p>
+                            The engineering challenge consisted of creating optimized robotic
+                            fingers and support structures capable of manipulating different
+                            industrial objects such as spoons and packaging elements while
+                            maintaining precision, repeatability, and grasp stability.
+                        </p>
 
-                    <h5>Key Technical Contributions</h5>
-                    <ul>
-                        <li><strong>Path Tracking Control:</strong> Implemented Pure Pursuit trajectory control using <code>cmd_vel</code> and <code>odom</code>.</li>
-                        <li><strong>Multi-Robot Architecture:</strong> Designed isolated ROS2 namespaces (<code>/robot1</code> and <code>/robot2</code>) to avoid topic collisions.</li>
-                        <li><strong>Coordination Logic:</strong> Integrated a custom <code>relay_manager</code> node for synchronization between robots.</li>
-                        <li><strong>Waypoint System:</strong> Created a dynamic waypoint publisher using YAML configurations.</li>
-                    </ul>
+                        <h5>Key Technical Contributions</h5>
+                        <ul>
+                            <li><strong>Custom CAD Design:</strong> Designed modular robotic gripper fingers and support
+                                fixtures in <code>Onshape</code> for the <code>SMC MHC2-16D</code> pneumatic gripper
+                                system.</li>
+                            <li><strong>3D Manufacturing Workflow:</strong> Fabricated and validated custom-designed
+                                parts using additive manufacturing techniques, including tolerance validation,
+                                mechanical fitting, and modular assembly integration.</li>
+                            <li><strong>Robot Programming:</strong> Programmed industrial manipulation routines for pick
+                                & place, multi-pick, and assembly tasks using Universal Robots software environments.
+                            </li>
+                            <li><strong>Assembly Automation:</strong> Developed automated spoon insertion and
+                                positioning routines where the robot aligned and inserted components into different
+                                target locations with varying difficulty levels.</li>
+                            <li><strong>Process Optimization:</strong> Optimized robot trajectories and execution timing
+                                to maximize the number of successful manipulation cycles during constrained operation
+                                windows.</li>
+                        </ul>
 
-                    <h5>System Architecture Graph</h5>
-                    <p>The graph below shows the ROS2 nodes, topics, remappings, and communication pipeline used for multi-robot synchronization.</p>
+                        <h5>Engineering Workflow</h5>
+                        <p>
+                            The project combined robotic manipulation, custom mechanical design, industrial automation,
+                            and additive manufacturing workflows. All components were designed in CAD, fabricated
+                            through 3D printing, assembled mechanically, and validated on industrial robotic platforms.
+                        </p>
 
-                    <div class="rqt-graph-container">
-                        <img src="./assets/images/Rqt_graph.png" alt="rqt-graph" class="img-fluid">
-                    </div>
-                    <div class="rqt-graph-container">
-                        <img src="./assets/images/robots2.png" alt="rqt-graph" class="img-fluid">
-                    </div>
+                        <h5>Mechanical Design & Prototyping</h5>
+                        <p>
+                            Designed and fabricated custom robotic fixtures, gripper adapters, and manipulation supports
+                            using additive manufacturing techniques. The components were optimized for fast prototyping,
+                            modular assembly, and compatibility with industrial robotic tooling.
+                        </p>
 
-                    <div class="project-links">
-                        <a href="./assets/documents/DOCUMENTO_TECNICO_ROM.pdf" target="_blank" class="btn-small">
-                            <i class="fa-solid fa-file-pdf"></i> Technical Report
-                        </a>
-                        <a href="https://youtube.com/shorts/iAL3DPVJlok" target="_blank" class="btn-small">
-                            <i class="fa-solid fa-video"></i> Demo Video
-                        </a>
-                    </div>
-                </div>
-            </div>
+                        <div class="project-img">
+                            <img src="./assets/images/img1.jpeg" alt="Custom 3D Printed Robotic Components"
+                                class="img-fluid">
+                        </div>
 
-            <div class="project-card">
-                <div class="project-content">
-                    <h4>3. Through The Door | Cross-Platform AR Assistive Technology</h4>
-                    <p class="tech-tags">
-                        <span>Flutter</span>
-                        <span>Dart</span>
-                        <span>Firebase</span>
-                        <span>Cloud Firestore</span>
-                        <span>AR</span>
-                        <span>OpenStreetMap</span>
-                        <span>BloC / Cubit</span>
-                        <span>Clean Architecture</span>
-                        <span>Figma</span>
-                    </p>
-
-                    <h5>Project Overview</h5>
-                    <p>
-                        <strong>Through The Door</strong> is a cross-platform mobile application designed to empower individuals with reduced mobility, specifically wheelchair users, by providing real-time accessibility telemetry of urban and university infrastructures.
-                    </p>
-                    <p>
-                        Developed during the <strong>Social Impact Apps</strong> studio at the Amsterdam University of Applied Sciences (HvA), the application addresses the lack of reliable architectural accessibility information by combining Augmented Reality, Geospatial Mapping, and Reactive Cloud Services.
-                    </p>
-
-                    <h5>Architecture & Technical Stack</h5>
-                    <ul>
-                        <li><strong>Frontend:</strong> Cross-platform mobile development using <code>Flutter</code> and <code>Dart</code>.</li>
-                        <li><strong>Architecture:</strong> Implemented following <code>Clean Architecture</code> and <code>SOLID</code> principles with clear separation between Data, Domain, and Presentation layers.</li>
-                        <li><strong>State Management:</strong> Reactive UI handling using <code>BloC / Cubit</code>.</li>
-                        <li><strong>Augmented Reality:</strong> Spatial measurement system developed with <code>ar_flutter_plugin_2</code> for horizontal and vertical plane detection.</li>
-                        <li><strong>Geospatial Infrastructure:</strong> Interactive mapping powered by <code>flutter_map</code> and <code>OpenStreetMap</code>.</li>
-                        <li><strong>Backend:</strong> Real-time cloud synchronization using <code>Cloud Firestore</code>, <code>Firebase Authentication</code>, and local persistence with <code>SharedPreferences</code>.</li>
-                        <li><strong>Dependency Injection:</strong> Modular decoupling through the <code>GetIt</code> service locator pattern.</li>
-                    </ul>
-
-                    <h5>Key Technical Contributions</h5>
-                    <ul>
-                        <li><strong>AR Spatial Telemetry:</strong> Developed the augmented reality measurement engine capable of detecting planes and computing real-world distances using 3D vector mathematics.</li>
-                        <li><strong>Accessibility Validation Logic:</strong> Implemented a dynamic validation pipeline comparing measured door widths against user wheelchair configurations to classify spaces as accessible or non-accessible in real time.</li>
-                        <li><strong>Live GPS & Map Synchronization:</strong> Engineered asynchronous geolocation pipelines connected to real-time Firestore streams for dynamic map marker updates.</li>
-                        <li><strong>Interactive Geospatial UI:</strong> Designed contextual map overlays and modal bottom sheets displaying telemetry metadata and accessibility measurements.</li>
-                        <li><strong>Automated Testing & Reliability:</strong> Developed widget tests and hardware virtualization mocks using <code>mocktail</code> and <code>MethodChannel</code> simulation to validate GPS and device-dependent workflows.</li>
-                    </ul>
-
-                    <h5>Social Impact & Engineering Goals</h5>
-                    <p>The application was designed to reduce uncertainty and mobility barriers for wheelchair users by delivering precise and verifiable accessibility measurements before physically reaching a location.</p>
-
-                    <div class="project-img">
-                        <img src="./assets/images/image_app.jpeg" alt="Through The Door Mobile App" class="img-fluid">
-                    </div>
-
-                    <div class="project-links">
-                        <a href="https://gitlab.fdmci.hva.nl/studio/social-impact-apps/onderwijs/projects/2025-2026-semester-2/lectoraat/through-the-door/-/tree/37efcdcbca9221a6ffba9ab2938655ea8f355100/" target="_blank" class="btn-small">
-                            <i class="fa-brands fa-github"></i> Repository
-                        </a>
-                        <a href="https://www.figma.com/design/Pg74wNIGVXs6XK6jgu0Yga/Wheelchair?node-id=0-1&t=hqj3HWlxiN86gSGB-1" target="_blank" class="btn-small">
-                            <i class="fa-brands fa-figma"></i> Figma Designs
-                        </a>
-                        <a href="https://youtube.com/shorts/77xe4c9LrBI" target="_blank" class="btn-small">
-                            <i class="fa-solid fa-video"></i> Demo Video
-                        </a>
+                        <div class="project-links">
+                            <a href="https://cad.onshape.com/documents/1eccf1dde654c16a14009203/w/492d1a0b2fd5d08933c38560/e/1936e551d0857c22591528de?renderMode=0&uiState=6a1497977106603d88c36e59"
+                                target="_blank" class="btn-small">
+                                <i class="fa-solid fa-cube"></i> Onshape CAD
+                            </a>
+                            <a href="https://youtube.com/shorts/2tpM4zZSS9I" target="_blank" class="btn-small">
+                                <i class="fa-solid fa-video"></i> Custom 3D-Printed Robotic Gripper
+                            </a>
+                            <a href="https://youtube.com/shorts/aeVWRfvBhe0" target="_blank" class="btn-small">
+                                <i class="fa-solid fa-video"></i> Demo Video 1
+                            </a>
+                            <a href="https://youtube.com/shorts/8AliYR19RZQ" target="_blank" class="btn-small">
+                                <i class="fa-solid fa-video"></i> Demo Video 2
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-content">
-                    <h4>4. Interactive 3D Graphics Simulation & Computer Vision Environment</h4>
-                    <p class="tech-tags">
-                        <span>C++</span>
-                        <span>OpenCV</span>
-                        <span>Visual Studio</span>
-                        <span>Computer Vision</span>
-                        <span>3D Simulation</span>
-                        <span>Real-time Rendering</span>
-                        <span>Collision Detection</span>
-                        <span>Interactive UI</span>
-                    </p>
+                <div class="project-card animate-card" data-category="robotics">
+                    <div class="project-content">
+                        <h4>2. Multi-Robot Relay Race Simulation (ROS2 & CoppeliaSim)</h4>
+                        <p class="tech-tags">
+                            <span>Python</span>
+                            <span>ROS2 (Humble)</span>
+                            <span>CoppeliaSim</span>
+                            <span>Pure Pursuit</span>
+                            <span>TF2</span>
+                            <span>YAML</span>
+                        </p>
 
-                    <h5>Project Overview</h5>
-                    <p>
-                        Developed an entirely custom, real-time interactive 3D simulation platform built using <strong>Visual Studio</strong>, 
-                        designed to manage compound object scenes, vehicle mechanics, and context-dependent rendering environments. 
-                        The engine architecture features dynamic ocean and garden environments, asset population routines, and interactive sub-systems.
-                    </p>
+                        <h5>Project Overview</h5>
+                        <p>
+                            Developed and simulated a cooperative relay race between two autonomous mobile robots using
+                            the Turtlebot3 model. The system implements a coordination architecture where one robot
+                            finishes a trajectory and triggers the second robot to continue autonomously.
+                        </p>
 
-                    <h5>Key Technical Contributions</h5>
-                    <ul>
-                        <li><strong>Multi-Vehicle Control Engine:</strong> Integrated switchable user-controlled kinematics supporting full free-roam navigation for distinct vehicles (car and motorcycle configurations), each with specialized properties.</li>
-                        <li><strong>Solidary Lighting Pipelines:</strong> Engineered responsive spotlight behaviors dynamically re-orienting and locking projection matrices matching live camera angle sweeps to mimic headlights.</li>
-                        <li><strong>Dynamic Environmental FX:</strong> Developed status toggles parsing localized real-time shaders for atmospheric rendering, including dynamic fog densities, wireframe debug styling, and day-night light shifting.</li>
-                        <li><strong>Real-time Physics & Interactive Sub-systems:</strong> Implemented discrete bounding-box spatial collision pipelines handling randomly generated procedural hazards. Created an in-simulation overlay tracking velocity scaling, a score-tracking currency system, and real-time element ignition/extinguishment routines via user pointer triggers.</li>
-                    </ul>
+                        <h5>Key Technical Contributions</h5>
+                        <ul>
+                            <li><strong>Path Tracking Control:</strong> Implemented Pure Pursuit trajectory control
+                                using <code>cmd_vel</code> and <code>odom</code>.</li>
+                            <li><strong>Multi-Robot Architecture:</strong> Designed isolated ROS2 namespaces
+                                (<code>/robot1</code> and <code>/robot2</code>) to avoid topic collisions.</li>
+                            <li><strong>Coordination Logic:</strong> Integrated a custom <code>relay_manager</code> node
+                                for synchronization between robots.</li>
+                            <li><strong>Waypoint System:</strong> Created a dynamic waypoint publisher using YAML
+                                configurations.</li>
+                        </ul>
 
-                    <div class="project-links">
-                        <a href="https://youtu.be/wJhJo2dAlt4?si=UaVpscF8nTe8a_qH" target="_blank" class="btn-small">
-                            <i class="fa-solid fa-video"></i> View Full System Demo
-                        </a>
+                        <h5>System Architecture Graph</h5>
+                        <p>The graph below shows the ROS2 nodes, topics, remappings, and communication pipeline used for
+                            multi-robot synchronization.</p>
+
+                        <div class="rqt-graph-container">
+                            <img src="./assets/images/Rqt_graph.png" alt="rqt-graph" class="img-fluid">
+                        </div>
+                        <div class="rqt-graph-container">
+                            <img src="./assets/images/robots2.png" alt="rqt-graph" class="img-fluid">
+                        </div>
+
+                        <div class="project-links">
+                            <a href="./assets/documents/DOCUMENTO_TECNICO_ROM.pdf" target="_blank" class="btn-small">
+                                <i class="fa-solid fa-file-pdf"></i> Technical Report
+                            </a>
+                            <a href="https://youtube.com/shorts/iAL3DPVJlok" target="_blank" class="btn-small">
+                                <i class="fa-solid fa-video"></i> Demo Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-card" data-category="mobile">
+                    <div class="project-content">
+                        <h4>3. Through The Door | Cross-Platform AR Assistive Technology</h4>
+                        <p class="tech-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                            <span>Cloud Firestore</span>
+                            <span>AR</span>
+                            <span>OpenStreetMap</span>
+                            <span>BloC / Cubit</span>
+                            <span>Clean Architecture</span>
+                            <span>Figma</span>
+                        </p>
+
+                        <h5>Project Overview</h5>
+                        <p>
+                            <strong>Through The Door</strong> is a cross-platform mobile application designed to empower
+                            individuals with reduced mobility, specifically wheelchair users, by providing real-time
+                            accessibility telemetry of urban and university infrastructures.
+                        </p>
+                        <p>
+                            Developed during the <strong>Social Impact Apps</strong> studio at the Amsterdam University
+                            of Applied Sciences (HvA), the application addresses the lack of reliable architectural
+                            accessibility information by combining Augmented Reality, Geospatial Mapping, and Reactive
+                            Cloud Services.
+                        </p>
+
+                        <h5>Architecture & Technical Stack</h5>
+                        <ul>
+                            <li><strong>Frontend:</strong> Cross-platform mobile development using <code>Flutter</code>
+                                and <code>Dart</code>.</li>
+                            <li><strong>Architecture:</strong> Implemented following <code>Clean Architecture</code> and
+                                <code>SOLID</code> principles with clear separation between Data, Domain, and
+                                Presentation layers.</li>
+                            <li><strong>State Management:</strong> Reactive UI handling using <code>BloC / Cubit</code>.
+                            </li>
+                            <li><strong>Augmented Reality:</strong> Spatial measurement system developed with
+                                <code>ar_flutter_plugin_2</code> for horizontal and vertical plane detection.</li>
+                            <li><strong>Geospatial Infrastructure:</strong> Interactive mapping powered by
+                                <code>flutter_map</code> and <code>OpenStreetMap</code>.</li>
+                            <li><strong>Backend:</strong> Real-time cloud synchronization using
+                                <code>Cloud Firestore</code>, <code>Firebase Authentication</code>, and local
+                                persistence with <code>SharedPreferences</code>.</li>
+                            <li><strong>Dependency Injection:</strong> Modular decoupling through the <code>GetIt</code>
+                                service locator pattern.</li>
+                        </ul>
+
+                        <h5>Key Technical Contributions</h5>
+                        <ul>
+                            <li><strong>AR Spatial Telemetry:</strong> Developed the augmented reality measurement
+                                engine capable of detecting planes and computing real-world distances using 3D vector
+                                mathematics.</li>
+                            <li><strong>Accessibility Validation Logic:</strong> Implemented a dynamic validation
+                                pipeline comparing measured door widths against user wheelchair configurations to
+                                classify spaces as accessible or non-accessible in real time.</li>
+                            <li><strong>Live GPS & Map Synchronization:</strong> Engineered asynchronous geolocation
+                                pipelines connected to real-time Firestore streams for dynamic map marker updates.</li>
+                            <li><strong>Interactive Geospatial UI:</strong> Designed contextual map overlays and modal
+                                bottom sheets displaying telemetry metadata and accessibility measurements.</li>
+                            <li><strong>Automated Testing & Reliability:</strong> Developed widget tests and hardware
+                                virtualization mocks using <code>mocktail</code> and <code>MethodChannel</code>
+                                simulation to validate GPS and device-dependent workflows.</li>
+                        </ul>
+
+                        <h5>Social Impact & Engineering Goals</h5>
+                        <p>The application was designed to reduce uncertainty and mobility barriers for wheelchair users
+                            by delivering precise and verifiable accessibility measurements before physically reaching a
+                            location.</p>
+
+                        <div class="project-img">
+                            <img src="./assets/images/image_app.jpeg" alt="Through The Door Mobile App"
+                                class="img-fluid">
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://gitlab.fdmci.hva.nl/studio/social-impact-apps/onderwijs/projects/2025-2026-semester-2/lectoraat/through-the-door/-/tree/37efcdcbca9221a6ffba9ab2938655ea8f355100/"
+                                target="_blank" class="btn-small">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <a href="https://www.figma.com/design/Pg74wNIGVXs6XK6jgu0Yga/Wheelchair?node-id=0-1&t=hqj3HWlxiN86gSGB-1"
+                                target="_blank" class="btn-small">
+                                <i class="fa-brands fa-figma"></i> Figma Designs
+                            </a>
+                            <a href="https://youtube.com/shorts/77xe4c9LrBI" target="_blank" class="btn-small">
+                                <i class="fa-solid fa-video"></i> Demo Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-card" data-category="vision">
+                    <div class="project-content">
+                        <h4>4. Interactive 3D Graphics Simulation & Computer Vision Environment</h4>
+                        <p class="tech-tags">
+                            <span>C++</span>
+                            <span>OpenCV</span>
+                            <span>Visual Studio</span>
+                            <span>Computer Vision</span>
+                            <span>3D Simulation</span>
+                            <span>Real-time Rendering</span>
+                            <span>Collision Detection</span>
+                            <span>Interactive UI</span>
+                        </p>
+
+                        <h5>Project Overview</h5>
+                        <p>
+                            Developed an entirely custom, real-time interactive 3D simulation platform built using
+                            <strong>Visual Studio</strong>,
+                            designed to manage compound object scenes, vehicle mechanics, and context-dependent
+                            rendering environments.
+                            The engine architecture features dynamic ocean and garden environments, asset population
+                            routines, and interactive sub-systems.
+                        </p>
+
+                        <h5>Key Technical Contributions</h5>
+                        <ul>
+                            <li><strong>Multi-Vehicle Control Engine:</strong> Integrated switchable user-controlled
+                                kinematics supporting full free-roam navigation for distinct vehicles (car and
+                                motorcycle configurations), each with specialized properties.</li>
+                            <li><strong>Solidary Lighting Pipelines:</strong> Engineered responsive spotlight behaviors
+                                dynamically re-orienting and locking projection matrices matching live camera angle
+                                sweeps to mimic headlights.</li>
+                            <li><strong>Dynamic Environmental FX:</strong> Developed status toggles parsing localized
+                                real-time shaders for atmospheric rendering, including dynamic fog densities, wireframe
+                                debug styling, and day-night light shifting.</li>
+                            <li><strong>Real-time Physics & Interactive Sub-systems:</strong> Implemented discrete
+                                bounding-box spatial collision pipelines handling randomly generated procedural hazards.
+                                Created an in-simulation overlay tracking velocity scaling, a score-tracking currency
+                                system, and real-time element ignition/extinguishment routines via user pointer
+                                triggers.</li>
+                        </ul>
+
+                        <div class="project-links">
+                            <a href="https://youtu.be/wJhJo2dAlt4?si=UaVpscF8nTe8a_qH" target="_blank"
+                                class="btn-small">
+                                <i class="fa-solid fa-video"></i> View Full System Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -286,8 +357,7 @@
         <section id="skills">
             <h3 class="section-title">🛠️ Skills & Tech Stack</h3>
             <div class="skills-grid">
-                
-                <div class="skill-category">
+                <div class="skill-category animate-card">
                     <h5>Programming Languages</h5>
                     <div class="skill-tags">
                         <span>Python</span>
@@ -299,7 +369,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category animate-card">
                     <h5>Robotics & Simulation</h5>
                     <div class="skill-tags">
                         <span>ROS2</span>
@@ -311,7 +381,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category animate-card">
                     <h5>Mobile & Software Engineering</h5>
                     <div class="skill-tags">
                         <span>Flutter</span>
@@ -323,7 +393,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category animate-card">
                     <h5>CAD & Engineering Tools</h5>
                     <div class="skill-tags">
                         <span>Onshape</span>
@@ -344,5 +414,30 @@
         </div>
     </footer>
 
+    <script>
+        const buttons = document.querySelectorAll('.submenu-btn');
+        const cards = document.querySelectorAll('.project-card');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                cards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'block';
+                        setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => { card.style.display = 'none'; }, 300);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
