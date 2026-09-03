@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucía Pardo Pérez | Robotics & Software Portfolio</title>
-    
+
 <meta property="og:title" content="Lucía Pardo Pérez | Robotics & Software Portfolio" />
 <meta property="og:description"
     content="Explore my engineering projects: ROS2 simulations, industrial automation with UR10e, Computer Vision systems, and Flutter mobile apps." />
 <meta property="og:url" content="https://luciapp20.github.io" />
 <meta property="og:type" content="website" />
-
 <link rel="icon" type="image/png" href="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f9be.png" />
     <link rel="stylesheet" href="style.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-
 <body>
-
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#projects">Projects</a>
@@ -27,22 +22,18 @@
             <a href="#contact">Contact</a>
         </div>
     </nav>
-
     <header>
         <div class="container hero-container hero-flex animate-fade-in">
             <div class="hero-image">
                 <img src="./assets/images/foto.jpg" alt="Lucía Pardo Pérez" class="profile-img">
             </div>
-
             <div class="hero-text">
                 <h1>Lucía Pardo Pérez</h1>
                 <h2>Robotics & Software Engineer</h2>
-
                 <p class="location">
                     <i class="fa-solid fa-location-dot"></i>
                     Amsterdam, Netherlands
                 </p>
-
                 <p class="bio">
                     Robotics & Software Engineer specialized in autonomous systems,
                     computer vision, ROS2 architectures, industrial automation,
@@ -50,20 +41,16 @@
                     Passionate about building scalable technologies connecting
                     software, robotics, and human-centered engineering.
                 </p>
-
                 <div class="contact-links">
                     <a href="https://www.linkedin.com/in/lucia-pardo-p%C3%A9rez-b443a524b/" target="_blank" class="btn">
                         <i class="fa-brands fa-linkedin"></i> LinkedIn
                     </a>
-
                     <a href="https://github.com/Luciapp20" target="_blank" class="btn btn-secondary">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a>
-
                     <a href="mailto:pardoperezlucia@gmail.com" class="btn btn-secondary">
                         <i class="fa-solid fa-envelope"></i> Email
                     </a>
-
                     <a href="./assets/documents/Lucia_Pardo_Perez_CV.pdf" target="_blank" class="btn">
                         <i class="fa-solid fa-file"></i> CV
                     </a>
@@ -71,21 +58,16 @@
             </div>
         </div>
     </header>
-
     <main class="container">
-
         <section id="projects">
             <h3 class="section-title">🦾 Key Projects</h3>
-
             <div class="project-submenu">
                 <button class="submenu-btn active" data-filter="all">All Projects</button>
                 <button class="submenu-btn" data-filter="robotics">Robotics & Automation</button>
                 <button class="submenu-btn" data-filter="vision">Vision & Graphics</button>
                 <button class="submenu-btn" data-filter="mobile">Mobile Apps</button>
             </div>
-
             <div class="projects-grid">
-
                 <div class="project-card animate-card" data-category="robotics">
                     <div class="project-content">
                         <h4>1. Industrial Pick & Place Automation with Custom 3D-Printed Tooling</h4>
@@ -98,7 +80,6 @@
                             <span>End-Effector Design</span>
                             <span>Rapid Prototyping</span>
                         </p>
-
                         <h5>Project Overview</h5>
                         <p>
                             Designed and programmed an industrial robotic manipulation cell
@@ -112,7 +93,6 @@
                             industrial objects such as spoons and packaging elements while
                             maintaining precision, repeatability, and grasp stability.
                         </p>
-
                         <h5>Key Technical Contributions</h5>
                         <ul>
                             <li><strong>Custom CAD Design:</strong> Designed modular robotic gripper fingers and support
@@ -131,26 +111,22 @@
                                 to maximize the number of successful manipulation cycles during constrained operation
                                 windows.</li>
                         </ul>
-
                         <h5>Engineering Workflow</h5>
                         <p>
                             The project combined robotic manipulation, custom mechanical design, industrial automation,
                             and additive manufacturing workflows. All components were designed in CAD, fabricated
                             through 3D printing, assembled mechanically, and validated on industrial robotic platforms.
                         </p>
-
                         <h5>Mechanical Design & Prototyping</h5>
                         <p>
                             Designed and fabricated custom robotic fixtures, gripper adapters, and manipulation supports
                             using additive manufacturing techniques. The components were optimized for fast prototyping,
                             modular assembly, and compatibility with industrial robotic tooling.
                         </p>
-
                         <div class="project-img">
                             <img src="./assets/images/img1.jpeg" alt="Custom 3D Printed Robotic Components"
                                 class="img-fluid">
                         </div>
-
                         <div class="project-links">
                             <a href="https://cad.onshape.com/documents/1eccf1dde654c16a14009203/w/492d1a0b2fd5d08933c38560/e/1936e551d0857c22591528de?renderMode=0&uiState=6a1497977106603d88c36e59"
                                 target="_blank" class="btn-small">
@@ -168,7 +144,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card animate-card" data-category="robotics">
                     <div class="project-content">
                         <h4>2. Multi-Robot Relay Race Simulation (ROS2 & CoppeliaSim)</h4>
@@ -180,14 +155,12 @@
                             <span>TF2</span>
                             <span>YAML</span>
                         </p>
-
                         <h5>Project Overview</h5>
                         <p>
                             Developed and simulated a cooperative relay race between two autonomous mobile robots using
                             the Turtlebot3 model. The system implements a coordination architecture where one robot
                             finishes a trajectory and triggers the second robot to continue autonomously.
                         </p>
-
                         <h5>Key Technical Contributions</h5>
                         <ul>
                             <li><strong>Path Tracking Control:</strong> Implemented Pure Pursuit trajectory control
@@ -199,18 +172,15 @@
                             <li><strong>Waypoint System:</strong> Created a dynamic waypoint publisher using YAML
                                 configurations.</li>
                         </ul>
-
                         <h5>System Architecture Graph</h5>
                         <p>The graph below shows the ROS2 nodes, topics, remappings, and communication pipeline used for
                             multi-robot synchronization.</p>
-
                         <div class="rqt-graph-container">
                             <img src="./assets/images/Rqt_graph.png" alt="rqt-graph" class="img-fluid">
                         </div>
                         <div class="rqt-graph-container">
                             <img src="./assets/images/robots2.png" alt="rqt-graph" class="img-fluid">
                         </div>
-
                         <div class="project-links">
                             <a href="./assets/documents/DOCUMENTO_TECNICO_ROM.pdf" target="_blank" class="btn-small">
                                 <i class="fa-solid fa-file-pdf"></i> Technical Report
@@ -221,10 +191,70 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="project-card animate-card" data-category="robotics">
+                    <div class="project-content">
+                        <h4>3. Vertical Warehouse Sorting Automation | PLC-Based Industrial Control System</h4>
+                        <p class="tech-tags">
+                            <span>CODESYS V3.5</span>
+                            <span>PLC Programming</span>
+                            <span>Modbus TCP/IP</span>
+                            <span>Factory I/O</span>
+                            <span>GRAFCET / SFC</span>
+                            <span>Ladder & Structured Text</span>
+                            <span>Computer Vision QC</span>
+                            <span>HMI / SCADA</span>
+                        </p>
+                        <h5>Project Overview</h5>
+                        <p>
+                            Designed and programmed the full control system for a simulated vertical warehouse
+                            sorting station, built on <code>Factory I/O</code> and driven by a PLC running in
+                            <code>CODESYS V3.5</code>. The station coordinates a vertical elevator, independent
+                            conveyors across four levels, and a computer-vision inspection point to fulfill
+                            pick-to-order requests entered by an operator through an HMI.
+                        </p>
+                        <p>
+                            The system runs entirely on demand: the operator enters the number of pieces required,
+                            and the elevator visits only the floors needed to complete that order, inspecting every
+                            piece by color and rejecting defective ones automatically before they reach the pallet.
+                        </p>
+                        <h5>Key Technical Contributions</h5>
+                        <ul>
+                            <li><strong>Hierarchical GRAFCET Architecture:</strong> Structured the control logic into
+                                three independent GRAFCET levels — safety (<code>GE</code>), operating-mode management
+                                (<code>GM</code>), and production (<code>GP</code>) — to keep emergency handling, mode
+                                switching, and the process sequence fully decoupled and easier to debug.</li>
+                            <li><strong>GEMMA-Based State Design:</strong> Modeled the machine's stop, run, and fault
+                                procedures (initial state, requested stop, fault recovery, and reset) using the GEMMA
+                                guide before translating them into the PLC's safety GRAFCET.</li>
+                            <li><strong>Computer-Vision Quality Control:</strong> Implemented real-time color-based
+                                inspection at each floor; defective pieces automatically reverse the conveyor and are
+                                diverted to a reject chute while a dedicated HMI indicator flags the rejection.</li>
+                            <li><strong>Order-Driven Production Logic:</strong> Built conditional-jump sequencing so
+                                the elevator skips any floor not required by the current order, and precisely tracks
+                                and displays the remaining piece count per floor in real time.</li>
+                            <li><strong>Fail-Safe Emergency Handling:</strong> Implemented an emergency circuit using
+                                negated (normally-closed) logic for the physical stop button, immediate power cut to
+                                every actuator, and a mandatory manual reset sequence before production can resume.</li>
+                            <li><strong>Modbus TCP/IP Integration:</strong> Connected the CODESYS PLC logic to the
+                                Factory I/O simulated plant over Modbus TCP/IP, managing more than 80 global
+                                variables across digital I/O and vision-sensor registers.</li>
+                            <li><strong>HMI / SCADA Supervision:</strong> Built a WebVisualization panel for order
+                                entry, live status monitoring, alarm signaling, and full manual (jog) control of
+                                every actuator for maintenance.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="./assets/documents/Vertical_Warehouse_PLC_Automation_Technical_Report.pdf" target="_blank" class="btn-small">
+                                <i class="fa-solid fa-file-pdf"></i> Technical Report
+                            </a>
+                            <a href="https://drive.google.com/file/d/1lpmG_zw_AoJ_agxybSScZwY-xzHgXv3c/view?usp=sharing" target="_blank" class="btn-small">
+                                <i class="fa-solid fa-video"></i> Demo Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-card animate-card" data-category="mobile">
                     <div class="project-content">
-                        <h4>3. Through The Door | Cross-Platform AR Assistive Technology</h4>
+                        <h4>4. Through The Door | Cross-Platform AR Assistive Technology</h4>
                         <p class="tech-tags">
                             <span>Flutter</span>
                             <span>Dart</span>
@@ -236,7 +266,6 @@
                             <span>Clean Architecture</span>
                             <span>Figma</span>
                         </p>
-
                         <h5>Project Overview</h5>
                         <p>
                             <strong>Through The Door</strong> is a cross-platform mobile application designed to empower
@@ -249,7 +278,6 @@
                             accessibility information by combining Augmented Reality, Geospatial Mapping, and Reactive
                             Cloud Services.
                         </p>
-
                         <h5>Architecture & Technical Stack</h5>
                         <ul>
                             <li><strong>Frontend:</strong> Cross-platform mobile development using <code>Flutter</code>
@@ -269,7 +297,6 @@
                             <li><strong>Dependency Injection:</strong> Modular decoupling through the <code>GetIt</code>
                                 service locator pattern.</li>
                         </ul>
-
                         <h5>Key Technical Contributions</h5>
                         <ul>
                             <li><strong>AR Spatial Telemetry:</strong> Developed the augmented reality measurement
@@ -286,17 +313,14 @@
                                 virtualization mocks using <code>mocktail</code> and <code>MethodChannel</code>
                                 simulation to validate GPS and device-dependent workflows.</li>
                         </ul>
-
                         <h5>Social Impact & Engineering Goals</h5>
                         <p>The application was designed to reduce uncertainty and mobility barriers for wheelchair users
                             by delivering precise and verifiable accessibility measurements before physically reaching a
                             location.</p>
-
                         <div class="project-img">
                             <img src="./assets/images/image_app.jpeg" alt="Through The Door Mobile App"
                                 class="img-fluid">
                         </div>
-
                         <div class="project-links">
                             <a href="https://gitlab.fdmci.hva.nl/studio/social-impact-apps/onderwijs/projects/2025-2026-semester-2/lectoraat/through-the-door/-/tree/37efcdcbca9221a6ffba9ab2938655ea8f355100/"
                                 target="_blank" class="btn-small">
@@ -312,10 +336,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card animate-card" data-category="vision">
                     <div class="project-content">
-                        <h4>4. Interactive 3D Graphics Simulation & Computer Vision Environment</h4>
+                        <h4>5. Interactive 3D Graphics Simulation & Computer Vision Environment</h4>
                         <p class="tech-tags">
                             <span>C++</span>
                             <span>OpenCV</span>
@@ -326,7 +349,6 @@
                             <span>Collision Detection</span>
                             <span>Interactive UI</span>
                         </p>
-
                         <h5>Project Overview</h5>
                         <p>
                             Developed an entirely custom, real-time interactive 3D simulation platform built using
@@ -336,7 +358,6 @@
                             The engine architecture features dynamic ocean and garden environments, asset population
                             routines, and interactive sub-systems.
                         </p>
-
                         <h5>Key Technical Contributions</h5>
                         <ul>
                             <li><strong>Multi-Vehicle Control Engine:</strong> Integrated switchable user-controlled
@@ -354,7 +375,6 @@
                                 system, and real-time element ignition/extinguishment routines via user pointer
                                 triggers.</li>
                         </ul>
-
                         <div class="project-links">
                             <a href="https://youtu.be/wJhJo2dAlt4?si=UaVpscF8nTe8a_qH" target="_blank"
                                 class="btn-small">
@@ -365,11 +385,9 @@
                 </div>
             </div>
         </section>
-
         <section id="skills">
             <h3 class="section-title">🛠️ Skills & Tech Stack</h3>
             <div class="skills-grid">
-
                 <div class="skill-category animate-card">
                     <h5>Programming Languages</h5>
                     <div class="skill-tags">
@@ -381,7 +399,6 @@
                         <span>HTML/CSS</span>
                     </div>
                 </div>
-
                 <div class="skill-category animate-card">
                     <h5>Robotics & Simulation</h5>
                     <div class="skill-tags">
@@ -393,7 +410,6 @@
                         <span>Computer Vision</span>
                     </div>
                 </div>
-
                 <div class="skill-category animate-card">
                     <h5>Mobile & Software Engineering</h5>
                     <div class="skill-tags">
@@ -405,7 +421,6 @@
                         <span>UI/UX</span>
                     </div>
                 </div>
-
                 <div class="skill-category animate-card">
                     <h5>CAD & Engineering Tools</h5>
                     <div class="skill-tags">
@@ -420,27 +435,21 @@
             </div>
         </section>
     </main>
-
     <footer id="contact">
         <div class="container">
             <p>© 2026 Lucía Pardo Pérez · Built with HTML & CSS</p>
         </div>
     </footer>
-
     <button id="backToTop" class="back-to-top" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-
     <script>
         // 1. PROJECT SUBMENU FILTER LOGIC
         const buttons = document.querySelectorAll('.submenu-btn');
         const cards = document.querySelectorAll('.project-card');
-
         buttons.forEach(button => {
             button.addEventListener('click', () => {
                 buttons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
-
                 const filterValue = button.getAttribute('data-filter');
-
                 cards.forEach(card => {
                     if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
                         card.style.display = 'block';
@@ -456,10 +465,8 @@
                 });
             });
         });
-
         // 2. BACK TO TOP ENGINE
         const btt = document.getElementById('backToTop');
-
         window.addEventListener('scroll', () => {
             if (window.scrollY > 400) {
                 btt.style.display = 'block';
@@ -467,11 +474,9 @@
                 btt.style.display = 'none';
             }
         });
-
         btt.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>
-
 </html>
